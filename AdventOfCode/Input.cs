@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AdventOfCode
 {
@@ -27,6 +28,13 @@ namespace AdventOfCode
             }
 
             return lines;
+        }
+
+        public static string SortString(string input)
+        {
+            var foo = input.ToArray();
+            Array.Sort(foo);
+            return new string(foo);
         }
     }
 }

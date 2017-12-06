@@ -6,6 +6,8 @@ namespace AdventOfCode2017
 {
     public class Day06
     {
+        private static int Part = 0;
+        
         private static int FindIndexOfHighestValue(List<int> banks)
         {
             var high = 0;
@@ -52,7 +54,7 @@ namespace AdventOfCode2017
             }
 
             Input = string.Join("\t", banks);
-            Console.WriteLine("Day 6 part 1: {0}", c);
+            Console.WriteLine("Day 6 part {1}: {0}", c, ++Part);
         }
 
         public static void Part2()

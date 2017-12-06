@@ -15,8 +15,13 @@ namespace AdventOfCode
 
         public static List<int> StringToListOfInt(string input)
         {
+            return StringToListOfInt(input, Environment.NewLine);
+        }
+
+        public static List<int> StringToListOfInt(string input, string splitChar)
+        {
             var lines = new List<int>();
-            foreach (var line in input.Split(Environment.NewLine))
+            foreach (var line in input.Split(splitChar))
             {
                 lines.Add(int.Parse(line));
             }
